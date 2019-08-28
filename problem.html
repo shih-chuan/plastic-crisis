@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>塑膠危機 | 塑膠問題</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="icon" type="image/png" href="img/logo.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/problem.css">
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid"><a href="index.html"><img class="navLogo" src="img/navLogo.svg"></a>
+        <div class="cross">
+          <div class="barTop"></div>
+          <div class="barBottom"></div>
+        </div>
+      </div>
+    </header>
+    <div class="darkness"></div>
+    <div class="sidePanel">
+      <div class="left">
+        <div class="header-block"></div>
+        <div class="menu-block">
+          <ul class="menu">
+            <li><a class="link survey" href="life.html" id="0">塑膠的一生</a></li>
+            <li><a class="link" href="problem.html" id="1">塑膠問題</a></li>
+            <li><a class="link" href="takeAction.html" id="2">採取行動</a></li>
+            <li><a class="link survey" href="survey.html" id="3">生活小調查</a></li>
+            <li class="button-wrap"><a class="button" href="about.html">製作團隊</a><a class="button" href="reference.html">參考資料</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <ul class="decoration">
+          <li><img src="img/bottleFactory.jpg" alt=""></li>
+          <li><img src="img/pollutedBeach.jpg" alt=""></li>
+          <li><img src="img/takeAction.jpg" alt=""></li>
+          <li><img src="img/survey.jpg" alt=""></li>
+          <li><img src="img/blueLego.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+    <div class="loading-page">
+      <div id="imgWrap"><img class="wave" src="img/wave.svg" alt=""><img id="loadBottle" src="img/loadingBottle.png" alt=""><img class="wave delay" src="img/wave.svg" alt=""><img class="wave delay" src="img/wave.svg" alt=""></div>
+      <h1>loading...</h1>
+    </div>
+    <div class="jumbotron jumbotron-fluid" style="background-image: url(img/pollutedBeach.jpg)">
+      <svg class="sectionBorder" xmlns="http://www.w3.org/2000/svg" width="1925" height="214.22595" viewbox="0 0 507.99999 56.68062" preserveaspectratio="xMidYMax meet">
+        <path d="M0 42.62953C107.44235 42.24807 321.25799-1.0496 392.8862.01948c71.62824 1.06908 115.11381 15.50164 115.11381 15.50164v41.1595H0z" fill="#e6e6ea"></path>
+      </svg>
+      <div class="container" data-0="transform: translateY(0px); opacity: 1" data-500="transform: translateY(100px); opacity: 0">
+        <h1>塑膠問題</h1>
+        <p>塑膠理當是一種革命性的材質，但自從被拿來做一次用容器後，它就成為了生態環境的殺手。那麼塑膠究竟導致了哪些問題呢?</p>
+      </div>
+    </div>
+    <section id="worldAnnualProduce">
+      <div class="container flex-container">
+        <div class="textArea">
+          <h1 class="wow fadeInUp">全球塑膠產量</h1>
+          <p class="wow fadeIn" data-wow-delay="0.3s">我們到底製造了多少塑膠了呢?這張表是一張全球年塑膠總生產量的演進圖。從圖中我們可以發現，1950年我們的塑膠生產量只有2百萬噸，2015年卻已經變成約200倍的3.81億噸，這大約是全球人口總重量的2/3重。由此可見人類對塑膠的需求正逐年不斷的增加</p>
+        </div>
+        <iframe class="img wow fadeInRight" src="https://ourworldindata.org/grapher/global-plastics-production?time=1950..2015" style="width: 100%; height: 400px; border: 0px none;"></iframe>
+      </div>
+    </section>
+    <section id="whereUse">
+      <div class="container flex-container">      
+        <div class="textArea">
+          <h1 class="wow fadeInUp">塑膠用在哪?</h1>
+          <p class="wow fadeIn" data-wow-delay="0.3s">塑膠被廣泛的應用在各種產業中，從紡織業、電子業、交通業，甚至到建築業都能看到它的身影。但我們用最多也丟最多塑膠的地方其實是用在包裝上。塑膠能夠有效隔離食物與外界接觸且可以便宜容易大量製造的特性，讓它成為了最佳的包裝材質。但在此同時，這些塑膠的使用時間非常的短通常只被用一次就被丟棄，因此塑膠包裝是所有塑膠垃圾中最多的，幾乎佔了全球總量的一半。</p>
+        </div>
+        <div class="chart-wrap img wow fadeInRight">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+      <svg class="sectionBorder" xmlns="http://www.w3.org/2000/svg" width="1925" height="214.22595" viewbox="0 0 507.99999 56.68062" preserveaspectratio="xMidYMax meet">
+        <path d="M0 42.62953C107.44235 42.24807 321.25799-1.0496 392.8862.01948c71.62824 1.06908 115.11381 15.50164 115.11381 15.50164v41.1595H0z" fill="#38404A"> </path>
+      </svg>
+    </section>
+    <section id="problems">
+      <div class="container">
+        <div id="textTop">
+          <h1 class="wow fadeInUp">各種塑膠危機</h1>
+          <p class="wow fadeIn">因為塑膠的用量不斷的增加，又被大量的運用在一次用包材上，加上其具有不易被自然分解的特性。若沒有經過妥善的處理，塑膠垃圾能夠以驚人的速度在環境中累積，造成許多嚴重的問題。</p>
+        </div>
+      </div>
+      <ul class="slideShow">
+        <li class="active" index="0">
+          <div class="card bioCrisis container"><img class="img" src="img/plasticNature.jpg" alt="">
+            <div class="textArea">
+              <h1>生態浩劫</h1>
+              <p>近年來野生動物因為塑膠垃圾而受傷或死亡的事件正在急遽上升，其中因為塑膠廢物的終點大多都是流向海裡，水鳥及海洋生物所面臨的威脅更是首當其衝。塑膠垃圾正在毀滅自然生態早已成為不可忽略的事實。</p><a class="button" href="bioCrisis.html">了解更多</a>
+            </div>
+          </div>
+        </li>
+        <li index="1">
+          <div class="card oceanSoup container"><img class="img" src="img/plasticOcean2.jpg" alt="">
+            <div class="textArea">
+              <h1>海漂垃圾</h1>
+              <p>站在海岸邊放眼望去，沙灘上滿滿的都是廢棄物，你會發現上面有很多都是像是吸管、塑膠袋等塑膠垃圾，但你看到的都只是冰山一角，事實上有更大量的垃圾正漂浮在海面上，隨著環流聚集在一處形成大型的垃圾漩渦。海廢早已不是地區性的問題而是全球危機。</p><a class="button" href="marineDebris.html">了解更多</a>
+            </div>
+          </div>
+        </li>
+        <li index="2">
+          <div class="card microPlastic container"><img class="img" src="img/microPlastic.png" alt="">
+            <div class="textArea">
+              <h1>塑膠微粒</h1>
+              <p>塑膠無法被微生物分解，同時這也表示它們不會憑空消失。相反的，它們會被分解成更小的碎片，稱為塑膠微粒。他們會被其他生物吞下肚，最後又經由食物鏈回到我們的餐盤上。雖然塑膠微粒是否對我們健康造成威脅仍有疑慮，但可以確定的是塑膠微粒早已入侵了我們的生活。</p><a class="button" href="microplastic.html">了解更多</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="leftArrow">‹</div>
+      <div class="rightArrow">›</div>
+      <ul class="slide-indicators">
+        <li class="active" index="0"></li>
+        <li index="1"></li>
+        <li index="2"></li>
+      </ul>
+    </section>
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="assets/js/jquery-hammer.js"></script>
+    <script src="js/problem.js"></script>
+    <script src="js/components/nav.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/loading-page.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>new WOW({offset: 100}).init();</script>
+  </body>
+</html>

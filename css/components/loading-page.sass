@@ -1,0 +1,50 @@
+@keyframes wave
+  0%
+    transform: translateX(0%)
+  100%
+    transform: translateX(-50%)
+@keyframes floatingBottle
+  from
+    transform: translate(-50%,10px)
+  to
+    transform: translate(-50%,-10px)
+@import url('https://fonts.googleapis.com/css?family=Lily+Script+One&display=swap')
+.loading-page
+  position: fixed
+  z-index: 100
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  width: 100vw
+  height: 100vh
+  background-color: #ddd
+  h1 
+    padding: 15px
+    margin: 0
+    font-size: 2em
+    font-weight: bold
+    font-family: 'Lily Script One'
+    color: #505e77
+    letter-spacing: 7px
+  #imgWrap
+    position: relative
+    width: 200px
+    height: 210px
+    overflow: hidden
+    img#loadBottle
+      padding-bottom: 10px
+      width: 50%
+      position: absolute
+      left: 50%
+      transform: translate(-50%, 0)
+      bottom: 0
+      animation: floatingBottle 1.75s ease-in-out infinite alternate
+    img.wave
+      animation: wave 2.3s linear infinite
+      animation-delay: -0.2s
+      position: absolute
+      bottom: 0
+      width: 200%
+      &.delay
+        animation-duration: 3.5s

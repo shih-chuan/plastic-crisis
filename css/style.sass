@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap')
+@mixin size($w, $h:$w)
+  width: $w
+  height: $h
+@import components/mixins
+@import components/nav
+@import components/header
+@import components/loading-page
+html, body
+  padding: 0
+  margin: 0
+  height: 100%
+  width: 100%
+  background-color: #38404a
+  font-family: 微軟正黑體
+body
+  overflow: hidden
+svg
+  position: absolute
+  width: 45%
+  height: 45%
+  &#blueDecorate
+    right: 0
+    top: 0
+  &#greenDecorate
+    bottom: 0
+  &#yellowDecorate
+    right: 0
+    bottom: 0
+.wrapper
+  +flexCenter
+  +absCenter
+  flex-direction: column
+  .bigLogo
+    max-width: 500px
+    min-width: 150px
+    width: 60%
+    margin-bottom: 15px
+  .button
+    position: relative
+    width: 22%
+    text-align: center
+    border: 2px solid #fff
+    color: #fff
+    letter-spacing: 2px
+    font-size: 17px
+    font-weight: bold
+    border-radius: 25px
+    padding: 5px 25px
+    overflow: hidden
+    transition: 0.5s
+    &:after
+      content: ''
+      width: 0
+      height: 150%
+      position: absolute
+      left: -20%
+      bottom: -5%
+      background-color: #f7f7f7
+      transform: skewX(15deg)
+      z-index: -1
+      transition: 0.5s
+    &:hover
+      cursor: pointer
+      color: #38404a
+      &:after
+        left: -10%
+        width: 120%
+    
+.plastic
+  position: absolute
+  width: 20%
+  height: 45%
+  margin: 20px
+  object-fit: contain
+  max-width: 200px
+  min-width: 80px
+  transition: 0.5s
+  &.rise
+    z-index: 10
+  &#straw
+    margin: 20px 0
+    width: 50%
+    max-width: 400px
+    min-width: 170px
+    &.rise
+      transform: translate(10px, 10px) scale(1.1)
+  &#bag
+    width: 30%
+    max-width: 250px
+    right: 0
+    &.rise
+      transform: translate(-10px, 10px) scale(1.1)
+  &#bottle
+    bottom: 0
+    right: 0
+    &.rise
+      transform: translate(-10px, -10px) scale(1.1)
+  &#cup
+    height: 30%
+    bottom: 0
+    left: 0
+    &.rise
+      transform: translate(10px, -10px) scale(1.1)
+
+.plastic:hover
+  cursor: pointer
+
+.recommend
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+  font-size: 1vw
+  letter-spacing: 1px
+  text-align: center
+  color: white
+  opacity: 0.4 
+[class^="panel"]
+  position: absolute
+  height: 100%
+  width: 100%
+  +flexCenter
+  flex-direction: column
+  opacity: 0
+  transition: 0.5s
+  cursor: arrow
+  h1
+    font-size: 15vw
+    font-weight: 900
+    color: rgba(white, 0.6)
+    padding: 0
+    margin: 0
+    line-height: 0.9
+    cursor: arrow
+    span
+      font-size: 5vw
+  p
+    text-align: center
+    font-size: 1.8vw
+    font-weight: bold
+    color: rgba(black, 0.4)
+    width: 50%
+  &.show
+    transition-duration: 0.5s
+    z-index: 9
+    opacity: 1
+.container-fluid
+  padding: 10px
+header
+  overflow: hidden
+  top: -30%
+  transition-duration: 0.5s
+  transition-timing-function: "easeInOut"
+  &.show
+    top: 0
+    transition-duration: 0.5s
+    transition-timing-function: "easeInOut"
+@media only screen and (max-width: 786px)
+  .wrapper .button
+    width: 80px
+    font-size: 15px
+  .plastic
+    height: auto
+    &#cup
+      height: auto
+  .recommend
+    display: none
+  [class^="panel"]
+    h1
+      font-size: 35vw
+      margin: 0
+      padding: 0
+      span
+        font-size: 10vw
+    p
+      width: 80%
+      font-size: 3.5vw
+      padding: 0
+    

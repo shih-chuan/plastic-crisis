@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="59.701332mm"
+   height="24.162376mm"
+   viewBox="0 0 59.701332 24.162376"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="fishEatFish.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="195.6949"
+     inkscape:cy="92.919958"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-global="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="圖層 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-45.565036,-45.102555)">
+    <path
+       style="fill:#211f21;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 51.315748,55.388346 c 0,0 13.630746,-18.708867 31.805075,-5.34539 l -5.61266,7.483548 6.414469,7.216277 c 0,0 -13.898015,12.561668 -33.67596,-4.810852 L 45.970359,64.208242 45.70309,50.577496 Z"
+       id="path826"
+       inkscape:connector-curvature="0" />
+    <ellipse
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.35330069;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="path828"
+       cx="75.83773"
+       cy="51.045216"
+       rx="1.2695303"
+       ry="1.1358955" />
+    <path
+       style="fill:#211f21;fill-opacity:1;stroke:#000000;stroke-width:0.0977637px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 89.255029,56.967104 c 0,0 5.036569,-6.912938 11.751991,-1.975125 l -2.073873,2.765176 2.370153,2.666418 c 0,0 -5.135333,4.641545 -12.443295,-1.777612 l -1.5801,1.5801 -0.09876,-5.036569 z"
+       id="path826-8"
+       inkscape:connector-curvature="0" />
+    <ellipse
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.13054483;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="path828-4"
+       cx="98.315918"
+       cy="55.362316"
+       rx="0.46909225"
+       ry="0.41971409" />
+    <circle
+       style="opacity:1;fill:#211f21;fill-opacity:1;stroke:none;stroke-width:0.44132498;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="path851"
+       cx="104.17969"
+       cy="58.355282"
+       r="1.0866816" />
+  </g>
+</svg>

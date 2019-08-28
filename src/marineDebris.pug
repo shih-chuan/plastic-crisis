@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title 塑膠危機 | 塑膠問題
+    link(rel="shortcut icon" href="img/logo.png")
+    link(rel="icon" type="image/png" href="img/logo.png" sizes="192x192")
+    link(rel="apple-touch-icon" sizes="180x180" href="img/logo.png")
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css')
+    link(rel='stylesheet' href='css/microplastic.css')
+  body
+    //include components/nav
+    //include components/header
+    include components/loading-page
+    .top-link(style="background-color: #0066FF") <i class="fas fa-arrow-up"></i>
+    section#mpVid.marineDebris
+      h1.english SeaDebris
+      svg.sectionBorder(xmlns='http://www.w3.org/2000/svg' width='1925' height='214.22595' viewbox='0 0 507.99999 56.68062' preserveaspectratio='xMidYMax meet')
+        path(d='M0 42.62953C107.44235 42.24807 321.25799-1.0496 392.8862.01948c71.62824 1.06908 115.11381 15.50164 115.11381 15.50164v41.1595H0z' fill='#e6e6ea')
+      #titleWrap
+        a.returnBtn(href="problem.html#problems") <返回
+        h1.title 海漂垃圾
+    section#debrisAmount
+      .container.grid-container
+          .textArea
+            h1.wow.fadeInLeft(data-wow-offset="100") 海廢數量
+            p.wow.fadeIn(data-wow-offset="100" data-wow-delay="0.3s") 研究估計，海洋塑膠垃圾已達1.5億噸，而且持續增加。依據世界地球日所公布的「塑膠污染驚人的十大真相」，每年大約有800萬噸的塑膠垃圾會流入海中，這些塑膠足以覆蓋全世界的每一吋海岸線，每一吋的量都還能再裝成滿滿的五個垃圾袋。如果再不控制塑膠垃圾的產生，到了2025，塑膠垃圾的重量超過海裡面所有魚類的重量。
+          img.img(src="img/800Mtons.svg", alt="")
+    section#fromWhere
+      .container
+        .textArea
+          h1.wow.fadeInUp(data-wow-offset="100") 海廢從哪來
+          p.wow.fadeIn(data-wow-offset="100" data-wow-delay="0.3s") 你或許會認為海洋塑膠大部分源自於人類在海上的活動，像是捕魚用的漁網、繩子、浮標、廢棄船隻等。但專家預估來自海上活動的塑膠垃圾只佔了20~30%，大部分70%~80%的塑膠垃圾其實是從陸地流入海洋。
+    section#top20
+      .container
+        .textArea
+          p.wow.fadeInUp(data-wow-offset="100") 河流系統是海洋塑膠其中一個主要來源。國際自然保護聯盟（IUCN）更強調，「世界上超過1/4的海洋塑膠廢棄物，可能只來自10條河流，而這其中有8條在亞洲。」下圖是前20大主要的塑膠汙染河川在2015年的汙染量。光是這20條河就佔了所有河川總塑膠汙染量的2/3。其中，台灣的淡水河也被列入其中，位居第16名，一年有1.47萬公噸的塑膠流入海洋。
+        iframe.wow.fadeInUp(data-wow-offset="100" width='800' height='600' src='https://app.powerbi.com/view?r=eyJrIjoiMWVmMDE1NzAtYWIwOC00NDYyLThhZGEtZWMxMjE1MWE0YjY4IiwidCI6ImFhYmI0NGNlLTk3N2EtNDA3Ni1iZmJjLWIxM2Y4ZTk2YjhhZSIsImMiOjEwfQ%3D%3D' frameborder='0' allowfullscreen='true')
+    section#AsiaMost
+      .container
+          .textArea.wow.fadeInUp(data-wow-offset="100")
+            p 由下表我們更能看出亞洲是最主要的河流輸入地區，佔了全球輸入量的86%，緊接著是非洲的7.8%。這些地區有著許多國家像是中國、印尼、阿爾及利亞、印度，在過去十年來以驚人的速度工業化，但垃圾處理與回收的基礎設施感不上國家發展的速度，導致許多垃圾沒有經過妥善地處裡。
+          canvas#myChart
+    section#toWhere
+      .container 
+        h1.wow.fadeInUp(data-wow-offset="100") 海廢跑去哪?
+        .grid-container
+          .textArea
+            p.wow.fadeInRight(data-wow-offset="100") 流入海洋的塑膠垃圾會隨著環流的推動最後聚集在垃圾帶中。海洋環流是由全球風場和潮汐所推動的大型洋流系統，而地球上有五個主要的海洋環流：北太平洋與南太平洋環流，北大西洋與南大西洋環流，以及印度洋環流。海洋環流會收集並集中海洋垃圾，形成大型垃圾帶。
+          img.img.wow.fadeIn(data-wow-offset="100" src="img/oceanCurrent.png", alt="")  
+    section#pacificPatch
+      .container
+        .textArea.wow.fadeInUp(data-wow-offset="100")
+          h1 太平洋垃圾帶
+          p 在所有垃圾帶中最大的就是由北太平洋環流形成的太平洋垃圾帶，聚集了超過1.8兆個塑膠垃圾及碎片，這樣的數目是銀河系星星的十倍，總種更高達8萬頓。這些塑膠垃圾並非緊密聚集在一起形成一座垃圾島，而是像一碗濃湯一樣散佈在40個台灣面積大小的海面上。
+
+    script(src='assets/js/jquery-3.4.1.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js')
+    script(src='js/microplastic.js')
+    script(src='js/components/nav.js')
+    script(src='js/components/header.js')
+    script(src='js/components/loading-page.js')
+    script(src='js/components/top-link.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
+    script new WOW().init();

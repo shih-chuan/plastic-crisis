@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title 塑膠危機 | 採取行動
+    link(rel="shortcut icon" href="img/logo.png")
+    link(rel="icon" type="image/png" href="img/logo.png" sizes="192x192")
+    link(rel="apple-touch-icon" sizes="180x180" href="img/logo.png")
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css')
+    link(rel='stylesheet' href='css/problem.css')
+  body
+    include components/header
+    include components/nav
+    include components/loading-page
+    .jumbotron.jumbotron-fluid(style="background-image: url(img/takeAction.jpg)")
+      svg.sectionBorder(xmlns='http://www.w3.org/2000/svg' width='1925' height='214.22595' viewbox='0 0 507.99999 56.68062' preserveaspectratio='xMidYMax meet')
+        path(d='M0 42.62953C107.44235 42.24807 321.25799-1.0496 392.8862.01948c71.62824 1.06908 115.11381 15.50164 115.11381 15.50164v41.1595H0z' fill='#e6e6ea')
+      .container(data-0="transform: translateY(0px); opacity: 1" data-500="transform: translateY(100px); opacity: 0")
+        h1 採取行動
+        p 塑膠造成那麼多問題，我們又該如何因應?讓我們一起遵守4R原則，邁向減塑生活吧!
+    section#fourRIntro
+      .container.grid-container
+        .textArea
+          h1.wow.fadeInUp 邁向減塑生活
+          p.wow.fadeIn(data-wow-delay="0.2s") 要解決塑機問題最重要的方向就是源頭減量。若不減少塑膠垃圾的產生，在怎麼淨灘與清掃垃圾也馬上會被新的垃圾掩蓋回去。因此每個人都要從自身做起落實減塑生活，才能化解危機。
+          h2.wow.fadeInUp 4R原則
+          p.wow.fadeIn(data-wow-delay="0.2s") 那麼要如何減塑呢?其實我們只要謹守4R原則就能有效降低生活中的塑膠垃圾量。所謂4R就是Refuse, Reduce, Reuse和Recycle。也就是拒用、減少、重複利用、回收你生活中的塑膠製品
+        .fourRIcon.wow.fadeInRight
+          img(src="img/stop.svg", alt="")
+          .explain
+            h2 1.REFUSE
+            p 拒絕使用任何一次性塑膠製品。
+        .fourRIcon.wow.fadeInRight(data-wow-delay="0.2s")
+          img(src="img/reuse.svg", alt="")
+          .explain
+            h2 2.REUSE
+            p 重複利用塑膠，不要急著丟掉。
+        .fourRIcon.wow.fadeInRight
+          img(src="img/reduce.svg", alt="")
+          .explain
+            h2 3.REDUCE
+            p 減少對塑膠的使用需求
+        .fourRIcon.wow.fadeInRight(data-wow-delay="0.2s")
+          img(src="img/recycle.svg", alt="")
+          .explain
+            h2 4.RECYCLE
+            p 做好回收讓塑膠可以被循環利用
+    section#refuse.fourR
+      .flex-container
+        .title
+          h1.wow.fadeInUp 1.REFUSE
+          p.wow.fadeIn(data-wow-delay="0.2s") 拒絕使用任何一次性塑膠製品。
+        img.iconImg.wow.slideInRight(src="img/stop.svg", alt="")
+      .flex-container.container
+        .content
+          h2.wow.fadeInUp 拒絕環境不友善產品
+          p.wow.fadeIn(data-wow-delay="0.2s") 再購買產品時請先思考它的包裝對環境是否友善。盡量不要選購用塑膠包裝的產品，更不要挑選那種大包裝裡面還有許多小包裝的產品。想像它們最後變成垃圾後對環境的影響有多大。也請不要選擇像是PLA或是鋪上一層PE淋膜的紙容器，這類複雜的材質很難回收，常常最後都只能送到焚化爐。
+        .content
+          h2.wow.fadeInUp 對一次用塑膠製品勇敢說不
+          p.wow.fadeIn(data-wow-delay="0.2s") 到了傳統市場或夜市，人手多個塑膠袋不是難見的事。每到一個店家消費，老闆總是不做多問，像是反射動作一樣迅速俐落的用塑膠袋打包起來。遇到類似情況，此時你若有準備環保袋或容器，不用覺得不好意思，請勇敢說不，大家一定會很高興你能為減塑盡一份心力。
+    section#reuse.fourR
+      .flex-container
+        img.iconImg.wow.slideInLeft(src="img/reuse.svg", alt="")
+        .title
+          h1.wow.fadeInUp 2.REUSE
+          p.wow.fadeIn(data-wow-delay="0.2s") 重複利用塑膠，不要急著丟掉。
+      .flex-container.container
+        .content
+          h2.wow.fadeInUp 重複使用塑膠袋
+          p.wow.fadeIn(data-wow-delay="0.2s") 並非一定使用非塑膠材質的袋子才叫環保袋，事實上不管是使用哪種材質只要能夠重複使用不隨意丟棄就能達到環保的效果。塑膠袋在某種程度上似乎還比棉製袋子還環保: 丹麥政府近年來的研究指出，製造一個薄塑膠袋所需要的能源及製程中的碳排放量極低，一個可以重複使用的棉質袋子要使用7100次才會低於一個塑膠袋對於環境的衝擊。因此只要能重複使用塑膠袋，它對環境的影響是可以比其他任何材質的環保袋還要低的。
+        .content
+          h2.wow.fadeInUp 重複使用塑膠容器
+          p.wow.fadeIn(data-wow-delay="0.2s") 除了環保袋之外，你也可以嘗試重複使用塑膠容器。像是常見的塑膠雞蛋盒不要急著丟掉，下次去傳統市場買蛋時這會是很好的裝蛋容器，就不怕用袋子裝蛋會破掉了。但是如果你想要重複利用塑膠容器來承裝水及飲品時請特別小心，千萬不要因為環保而把自己的健康犧牲了。最好使用PP材質有♷標誌的容器，其耐酸鹼耐熱溫度可達120℃的特性，讓它成為較安全可以重複使用的材質。
+    section#reduce.fourR
+      .flex-container
+        .title
+          h1.wow.fadeInUp 3.REDUCE
+          p.wow.fadeIn(data-wow-delay="0.2s") 減少對塑膠的使用需求
+        img.iconImg.wow.slideInRight(src="img/reduce.svg", alt="")
+      .flex-container.container
+        .content#left-text
+          h2.wow.fadeInUp 自備環保餐具、環保袋與環保吸管
+          p.wow.fadeIn(data-wow-delay="0.2s" style="padding-bottom: 20px;")  你知道光是購買一杯手搖飲料就會產生多少塑膠垃圾嗎? 答案是5個: 塑膠杯本身、杯口封膜、吸管、吸管的包裝與塑膠袋。外帶一份便當也是，從餐盒、塑膠袋、橡皮筋到免洗筷，都是一次性的包裝與用具。因此想要落實生活減塑最重要的就是要自備能重複使用並且取代他們的材質製成的容器與袋子。
+
+          h2.wow.fadeInUp 在餐廳內用
+          p.wow.fadeIn(data-wow-delay="0.2s") 若不想要自己帶環保餐具，但是又想減塑那要怎麼辦呢?你可以考慮直接在店內用餐。在店內用餐不僅能夠避免掉外帶所需要用到的一次性塑膠餐盒，更能省去自己清潔環保餐盒的麻煩。塑膠吸管方面，環保署發佈「一次用塑膠吸管限制使用對象及實施方式」，規定自 7 月 1 日起，政府部門、學校、百貨公司業及購物中心、連鎖速食店等 4 類對象，內用餐飲不得提供一次用塑膠吸管。
+        .content#card-wrap
+          .card.wow.slideInUp
+            img(src="img/discount.jpg", alt="")
+            .discount-text
+                h3 自備餐具 x 好康大放送 x 快樂做環保
+                h1 環保優惠店家
+                p 為了讓大家一起動手做環保，許多店家都有為自備環保杯或環保餐具的消費者特別的優惠喔!可以達成減塑的目的又能省錢呢，趕快來看看吧!
+            a(href="https://hwms.epa.gov.tw/dispPageBox/shop/shopCP.aspx?ddsPageID=DRINK&" target="_blank")
+              img.foward-arrow(src="img/arrow.svg", alt="")
+    section#recycle.fourR
+      .flex-container
+        img.iconImg.wow.slideInLeft(src="img/recycle.svg", alt="")
+        .title
+          h1.wow.fadeInUp 4.RECYCLE
+          p.wow.fadeIn(data-wow-delay="0.2s") 做好回收讓塑膠可以被循環利用
+      .container
+        .content
+          h2.wow.fadeInUp 不能拒絕、減少、重複使用的塑膠才拿去回收
+          p.wow.fadeIn(data-wow-delay="0.2s") 回收應當是你真的無技可施時才能用的最後手段。你或許會認為只要好好做回收塑膠能夠永續利用，就不會造成環境的負擔，所以用多少塑膠都沒問題。但事實真是如此嗎?事實上送上回收車的塑膠垃圾，因為塑膠垃圾處理成本高，除非單一性質、大量，否則塑膠垃圾的回收總是乏人問津，它們在回收廠等著等著，最終的下場還是進入焚化爐。讓我們一起來看看究竟是那些塑膠垃圾雖然進了回收系統，最後卻送去焚化爐了吧!
+          .flex-container.vid-wrap
+            .left
+              iframe.wow.fadeInUp(width='560' height='315' src='https://www.youtube.com/embed/lg90-EPCKFQ' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+              h3.wow.fadeInUp 紙容器
+                p.wow.fadeIn(data-wow-delay="0.2s") 複合材質的紙容器，為了讓紙能夠防水，市面上常見的紙杯紙碗，都會在紙上面鋪上一層塑膠淋膜。這樣的複合材質需要特殊的技術，才能將紙與塑膠分離。目前有這樣處理技術的廠商全台只有一家，也因此2016年統計只有10%的紙容器被回收其他90%都送到了焚化爐。
+              h3.wow.fadeInUp PLA生質塑膠 
+                p.wow.fadeIn(data-wow-delay="0.2s") 從玉米澱粉製造出來的生質塑膠PLA，雖然具有生物循環的特性，但是回收生質塑膠需要特殊的工業堆肥技術，並不是埋在土裡就能自然分解，被譏諷為不環保的環保材質。為台灣目前沒有處理PLA的堆肥廠，因此大部分最後都送到了焚化爐。
+            .right
+              iframe.wow.fadeInUp(width='560' height='315' src='https://www.youtube.com/embed/bQn5se4kl-Y?start=318' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+              h3.wow.fadeInUp 薄片塑膠
+                p.wow.fadeIn(data-wow-delay="0.2s") 薄片塑膠的用途非常多，像是蛋盒、水果盒、裝小家電的塑膠軟殼都是使用薄片，雖然看似都是透明的塑膠片，目前實則有PS、PET、PVC、PP等材質在市面上使用，材質多而複雜，而且有的甚至標示不清。回收後容易混合在一起，十分難處理。
+
+
+    script(src='assets/js/jquery-3.4.1.min.js')
+    script(src="js/survey.js")
+    script(src='js/components/nav.js')
+    script(src='js/components/header.js')
+    script(src='js/components/loading-page.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
+    script new WOW({offset: 100}).init();

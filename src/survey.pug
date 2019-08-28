@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title 塑膠危機 | 生活小調查
+    link(rel="shortcut icon" href="img/logo.png")
+    link(rel="icon" type="image/png" href="img/logo.png" sizes="192x192")
+    link(rel="apple-touch-icon" sizes="180x180" href="img/logo.png")
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css')
+    link(rel='stylesheet' href='css/problem.css')
+  body
+    include components/header
+    include components/nav
+    include components/loading-page
+    .jumbotron.jumbotron-fluid(style="background-image: url(img/survey.jpg)")
+      svg.sectionBorder(xmlns='http://www.w3.org/2000/svg' width='1925' height='214.22595' viewbox='0 0 507.99999 56.68062' preserveaspectratio='xMidYMax meet')
+        path(d='M0 42.62953C107.44235 42.24807 321.25799-1.0496 392.8862.01948c71.62824 1.06908 115.11381 15.50164 115.11381 15.50164v41.1595H0z' fill='#e6e6ea')
+      .container(data-0="transform: translateY(0px); opacity: 1" data-500="transform: translateY(100px); opacity: 0")
+        h1 生活小調查
+        p 塑膠充斥著我們的生活，你又是如何看待他的呢?一起來檢視自己的塑膠使用習慣，並看看大家的想法吧!
+    section#Question1
+      .container
+        h1.title 你是否會警覺留意自己平時使用與丟棄多少塑膠製品?
+        form(action="")
+          button(name="Q1" value="Yes" qID="0") Yes
+          button(name="Q1" value="No" qID="0") No
+        ul.result#resultQ1
+          li.yes
+            .text
+              h1 是
+              p 人
+            .bar
+              .val
+          li.no
+            .text
+              h1 否
+              p 人
+            .bar
+              .val
+    section#Question2
+      .container
+        h1.title 你是否會重複利用使用過的塑膠容器與塑膠袋?
+        form(action="")
+          button(name="Q2" value="Yes" qID="1") Yes
+          button(name="Q2" value="No" qID="1") No
+        ul.result#resultQ2
+          li.yes
+            .text
+              h1 是
+              p 人
+            .bar
+              .val
+          li.no
+            .text
+              h1 否
+              p 人
+            .bar
+              .val
+    section#Question3
+      .container
+        h1.title 你是否會主動回收使用過的塑膠容器?
+        form(action="")
+          button(name="Q3" value="Yes" qID="2") Yes
+          button(name="Q3" value="No" qID="2") No
+        ul.result#resultQ3
+          li.yes
+            .text
+              h1 是
+              p 人
+            .bar
+              .val
+          li.no
+            .text
+              h1 否
+              p 人
+            .bar
+              .val
+    section#Question4
+      .container
+        h1.title 你通常使用什麼盛裝你在賣場購買的物品?
+        form(action="")
+          button(name="Q4" value="plasticBag" qID="3") 賣場提供的塑膠袋
+          button(name="Q4" value="box" qID="3") 賣場不用的紙箱
+          button(name="Q4" value="ownBag" qID="3") 自備環保袋
+          button(name="Q4" value="hand" qID="3") 用手拿
+        ul.result#resultQ4
+          li.plasticBag
+            .text
+              h1 賣場提供的塑膠袋
+              p 人
+            .bar
+              .val
+          li.box
+            .text
+              h1 賣場不用的紙箱
+              p 人
+            .bar
+              .val
+          li.ownBag
+            .text
+              h1 自備環保袋
+              p 人
+            .bar
+              .val
+          li.hand
+            .text
+              h1 用手拿
+              p 人
+            .bar
+              .val
+    section#Question5
+      .container
+        h1.title 你在外購買餐點與飲料時是否會自備環保杯或環保餐具?
+        form(action="")
+          button(name="Q5" value="Yes" qID="4") Yes
+          button(name="Q5" value="No" qID="4") No
+        ul.result#resultQ5
+          li.yes
+            .text
+              h1 是
+              p 人
+            .bar
+              .val
+          li.no
+            .text
+              h1 否
+              p 人
+            .bar
+              .val
+    section#Question6
+      .container
+        h1.title 在外產生的可回收塑膠垃圾你是否會丟入資源回收桶或是帶回家處理?
+        form(action="")
+          button(name="Q6" value="Yes" qID="5") Yes
+          button(name="Q6" value="No" qID="5") No
+        ul.result#resultQ6
+          li.yes
+            .text
+              h1 是
+              p 人
+            .bar
+              .val
+          li.no
+            .text
+              h1 否
+              p 人
+            .bar
+              .val
+    section#Question7
+      .container
+        h1.title 你是否重視減塑，並盡可能減少使用一次性塑膠製品?
+        form(action="")
+          button(name="Q7" value="Yes" qID="6") Yes
+          button(name="Q7" value="No" qID="6") No
+        ul.result#resultQ7
+          li.yes
+            .text
+              h1 是
+              p 人
+            .bar
+              .val
+          li.no
+            .text
+              h1 否
+              p 人
+            .bar
+              .val
+    script(src='assets/js/jquery-3.4.1.min.js')
+    script(src="js/survey.js")
+    script(src='js/components/nav.js')
+    script(src='js/components/header.js')
+    script(src='js/components/loading-page.js')

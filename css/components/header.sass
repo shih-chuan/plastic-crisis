@@ -1,0 +1,55 @@
+@mixin size($w, $h: $w)
+  width: $w
+  height: $h
+header
+  visibility: visible
+  position: fixed
+  width: 100vw
+  z-index: 100
+  transition: 0.3s
+  .container-fluid
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 30px
+    .navLogo
+      padding: 20px 0 0 0
+    .cross
+      $stroke: 8px
+      opacity: 0.7
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      cursor: pointer
+      margin: 10px
+      +size(60px)
+      transition: 0.5s
+      &:hover
+        [class^='bar']
+          filter: brightness(100%)
+      [class^='bar']
+        position: absolute
+        +size(50px, $stroke)
+        margin: 0
+        background-color: #a3a3a3
+        border-radius: $stroke/2
+        transition: 0.5s
+      .barTop
+        transform: translate(-5px, 10px)
+      .barBottom
+        transform: translate(5px, -10px)
+      &.show
+        .barTop
+          transform: rotate(45deg)
+        .barBottom
+          transform: rotate(-45deg)
+  &.hide
+    visibility: hidden
+    opacity: 0
+@media only screen and (max-width: 786px)
+  header
+    .container-fluid
+      padding: 0 15px
+    .navLogo
+      width: 100px

@@ -1,0 +1,734 @@
+@import components/mixins
+@import components/nav
+@import components/header
+@import components/loading-page
+@import components/color
+@keyframes floating
+  from
+    transform: translate(0,15px)
+  to
+    transform: translate(0,-15px) 
+@keyframes floatingYellow
+  from
+    transform: translate(-51.16px, -5.194px) translate(0,5px)
+  to
+    transform: translate(-51.16px, -5.194px) translate(0, 0px) 
+@keyframes floatingBlue
+  from
+    transform: translate(-195.321px, -68.813px) translate(0,5px)
+  to 
+    transform: translate(-195.321px, -68.813px) translate(0,-2.5px)
+html, body
+  margin: 0
+  padding: 0
+  font-family: "微軟正黑體"
+  overflow-x: hidden
+body
+  overflow-x: hidden
+  background-color: #e6e6ea
+ul 
+  list-style: none   
+footer 
+  background-color: #222
+  color: #ffffff
+  .column 
+    flex: 3
+  .column.logo 
+    flex: 1
+section 
+  overflow: hidden
+h1 
+  margin: 0
+  font-size: 60px
+  letter-spacing: 2px
+  font-weight: bold
+  padding: 20px 0
+h2 
+  font-weight: bold
+p 
+  margin: 0
+  font-size: 1rem
+  letter-spacing: 1px
+  padding-bottom: 20px
+ul, ol 
+  list-style: none
+  padding: 0
+  margin: 0
+.jumbotron
+  position: relative
+  height: 100vh
+  max-height: 800px
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+  margin: 0
+  .sectionBorder
+    z-index: 0
+    position: absolute
+    bottom: -1%
+    width: 100%
+  h1, p
+    color: #fff
+  h1
+    font-size: 80px
+    padding: 20px 0
+    font-weight: bold
+  p   
+    padding-bottom: 20vh
+    width: 80%
+.flex-container 
+  display: flex
+#pic-source
+  padding: 60px 0
+  h1 
+    text-align: center
+  h2 
+    text-align: center
+  p 
+    padding: 10px 0
+  ul 
+    font-size: 20px 
+    letter-spacing: 1px
+    padding: 20px
+  #photo 
+    padding-bottom: 20px
+    .img 
+      flex: 1
+      +flexCenter
+      cursor: pointer
+      padding: 10px
+      p 
+        position: absolute
+        z-index: 2
+        visibility: hidden
+        padding: 0
+        color: #fff
+        font-weight: bold
+        transition: 0.3s
+        opacity: 0
+      img 
+        width: 100%
+        transition: 0.3s
+        height: 300px
+        object-fit: cover
+      &:hover 
+        p 
+          visibility: visible
+          opacity: 1
+        img
+          filter: brightness(0.3)
+  #icon 
+    .top 
+      justify-content: space-around
+      padding: 20px 0
+      .img 
+        display: flex
+        justify-content: center
+        img 
+          width: 80%
+    .middle, .bottom
+      padding: 20px 0
+      .img 
+        flex: 7
+        display: flex
+        justify-content: center
+        img 
+          width: 80%
+          object-fit: contain
+      .credit
+        flex: 5
+        display: flex
+        align-items: center
+#word-source
+  h1 
+    text-align: center
+    padding-bottom: 40px
+  li 
+    padding-bottom: 20px
+      
+
+#worldAnnualProduce, #whereUse
+  position: relative
+  padding-top: 60px
+  .flex-container
+    display: flex
+    .textArea
+      display: flex
+      flex-direction: column
+      justify-content: center
+      flex: 5
+      padding-right: 50px
+    .img
+      flex: 5
+  .sectionBorder
+    z-index: -1
+    position: absolute
+    bottom: -1%
+    width: 100%
+#whereUse
+  padding-bottom: 200px
+
+#problems
+  position: relative
+  background-color: #38404A
+  padding-top: 60px
+  h1 
+    white-space: nowrap
+  #textTop
+    color: #ddd
+  .slideShow
+    list-style: none
+    padding: 0
+    margin: 0
+    height: 100%
+    width: 300vw
+    transition: 0.5s
+    +flexCenter
+    li
+      width: 100vw
+      +flexCenter
+      .card
+        position: relative
+        background-color: transparent
+        border: none
+        border-radius: 40px
+        display: flex
+        flex-direction: row
+        justify-content: center
+        transition: 0.5s
+        padding: 5vh 0 15vh 0
+        &.bioCrisis
+          h1 
+            color: #50de22
+          .button
+            background-image: linear-gradient(to bottom right, #66FF00, #23D5CF)
+        &.oceanSoup
+          h1 
+            color: $colorBlue
+          .button
+            background-image: linear-gradient(to bottom right, #0066FF, #00CEFF)
+        &.microPlastic
+          h1 
+            color: $colorYellow
+          .button
+            background-image: linear-gradient(to bottom right, #FFCC00, #FFAA00)
+        .img
+          width: 25vw
+          height: 25vw
+          object-fit: cover
+          float: right
+          border-radius: 50%
+          box-shadow: 5px 5px 6px rgba(black, 0.2)
+        .textArea
+          position: relative
+          padding-left: 50px
+          display: flex
+          flex-direction: column
+          justify-content: center
+          color: #E6E6EA
+          max-width: 470px
+          h1 
+            font-weight: 900
+            text-shadow: 3px 3px 10px rgba(black, 0.2)
+          p 
+            padding-bottom: 20px
+          .button
+            text-align: center
+            letter-spacing: 2px
+            color: #fff
+            width: 10vw
+            font-size: 1.5vw
+            font-weight: bold
+            text-decoration: none
+            background-color: transparent
+            border-radius: 50px
+            padding: 10px 0
+            overflow: hidden
+            transition: 0.5s
+            &:hover
+              cursor: pointer
+              filter: brightness(0.9)
+  [class$='Arrow']
+    cursor: pointer
+    position: absolute
+    top: 60%
+    transform: translateY(-50%)
+    color: #E6E6EA
+    font-size: 150px
+    padding: 3vw
+    font-weight: 900
+  .rightArrow
+    right: 0
+  .slide-indicators
+    position: absolute
+    bottom: 0
+    left: 50%
+    width: 200px
+    padding: 30px !important
+    transform: translateX(-50%)
+    display: flex
+    justify-content: space-around
+    padding: 0
+    margin: 0
+    list-style: none
+    li 
+      +size(10px)
+      border-radius: 50%
+      background-color: rgba(#E6E6EA, 0.5)
+      transition: 0.5s
+      &.active
+        background-color: #E6E6EA
+        transform: scale(1.5)
+[id^='Question']
+  background-color: #e6e6ea
+  padding: 60px 0
+  .title
+    font-size: 50px
+    font-weight: bold
+    width: 70% 
+    padding-bottom: 30px
+  form
+    display: flex
+    justify-content: flex-end
+    button
+      border: none
+      outline: 0
+      cursor: pointer
+      margin: 0 20px
+      padding: 10px 30px
+      background-color: #fff
+      box-shadow: 0 10px 0 rgba(black, 0.2)
+      font-size: 30px
+      transition: 0.3s
+      &:hover
+        transform: translateY(5px)
+        box-shadow: 0 5px 0 rgba(black, 0.2)
+      &:disabled
+        opacity: 1
+      &.active
+        transform: translateY(10px)
+        box-shadow: 0 0px 0 #A20000
+        background-color: #FF3838
+        color: #fff
+  .result
+    list-style: none
+    padding: 0
+    margin: 0
+    li 
+      .text
+        padding: 20px 0 0 0
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        p 
+          margin: 0
+          padding: 0
+        h1 
+          font-size: 30px
+          padding: 0
+          margin: 0
+      .bar
+        position: relative
+        +size(100%, 10px)
+        background-color: #D5D5D5
+        overflow: hidden
+        border-radius: 5px
+        width: 100%
+        .val
+          transition: 0.5s
+          height: 100%
+          width: 0
+          border-radius: 5px
+          background-color: #FF6969
+#Question4
+  form 
+    button
+      font-size: 1.5vw
+#fourRIntro
+  .grid-container
+    display: grid
+    grid-gap: 20px
+    grid-template-columns: 3fr 2fr 2fr
+    grid-template-rows: 1fr 1fr
+    .textArea
+      display: flex
+      flex-direction: column
+      justify-content: center
+      grid-row: 1 / 3
+      h2 
+        margin: 15px 0
+        font-size: 50px
+    .fourRIcon
+      display: flex
+      flex-direction: column
+      align-items: center
+      .explain
+        padding: 0 20px
+        h2 
+          width: 100%
+          letter-spacing: 4px
+          font-weight: bold
+          font-size: 3vw
+          text-align: justify
+      img 
+        width: 150px
+        height: 150px
+        margin: 20px auto
+.fourR
+  padding: 60px 0
+  h1  
+    padding: 0
+    padding-top: 20px
+  .flex-container
+    display: flex
+  .title
+    flex: 6
+    padding: 50px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: left
+    color: #fff
+    height: 350px
+    background-color: #333
+    h1 
+      font-size: 8vw
+    p 
+      font-size: 2vw
+  img 
+    height: 350px
+    flex: 3
+  .content
+    flex: 1
+    padding: 60px 20px 0 20px
+.fourR:nth-child(2n+1)
+  .title
+    text-align: right
+#refuse
+  .title
+    background-color: $colorBlue
+#reuse
+  .title
+    background-color: $colorRed
+#reduce
+  .title
+    background-color: $colorYellow
+  #left-text
+    display: flex
+    flex-direction: column
+    justify-content: center
+  #card-wrap
+    display: flex
+    justify-content: center
+    .card
+      max-width: 300px
+      box-shadow: 0 0 35px rgba(0,0,0,0.3)
+      transition: 0.5s
+      &:hover
+        box-shadow: 5px 5px 60px rgba(0,0,0,0.3)
+        transform: translate(-5px,-5px)
+      .discount-text
+        background-color: #7C7C7C
+        color: #fff
+        padding: 30px 30px 60px 30px
+        h3 
+          font-size: 12px
+          letter-spacing: 2px
+          margin: 0
+        h1 
+          font-size: 35px
+          padding: 10px 0
+        p 
+          font-size: 12px
+    img 
+      width: 100%
+      height: 100%
+      height: 150px
+      object-fit: cover
+    .foward-arrow
+      +size(100px)
+      position: absolute
+      right: 10px
+      bottom: -40px
+#recycle
+  h3 
+    padding-top: 20px
+    font-size: 20px
+    font-weight: bold
+  .title
+    background-color: $colorGreen
+  .vid-wrap
+    .left, .right
+      padding: 15px
+      flex: 1
+      p 
+        padding: 0
+        padding-top: 10px
+        font-weight: normal
+      iframe
+        width: 100%
+        box-shadow: 10px 10px 0 $colorGreen
+.team
+  padding: 60px 0
+  overflow: hidden
+  .text-container
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    .role-list
+      flex: 3
+      list-style: none
+      display: flex
+      justify-content: flex-end
+      padding-right: 20px
+      li 
+        padding-top: 10px
+        font-weight: bold
+        text-align: justify
+        font-size: 2vw
+    .feedback
+      position: relative
+      flex: 7
+      margin-top: -27%
+    .name
+      text-align: right
+      color: #5e5e5e
+      right: 0
+      top: -50%
+      margin-bottom: -55px
+      h1 
+        position: relative
+        white-space: nowrap
+        z-index: 2
+        padding: 0
+        letter-spacing: 40px
+        font-size: 10vw
+    .content
+      position: relative
+      box-sizing: border-box
+      padding: 20px
+      padding-left: 0
+      background-color: #fff
+      box-shadow: 10px 10px 0 $colorBlue
+      p 
+        padding: 30px 50px
+      h2 
+        position: relative
+        white-space: nowrap
+        font-size: 2.5vw
+        z-index: 0
+        text-align: right
+        width: 50%
+        box-sizing: border-box
+        margin-top: 30px
+        letter-spacing: 10px
+        padding: 10px 20px 
+        color: #fff
+        &:before
+          z-index: -1
+          content: ""
+          position: absolute
+          left: 0
+          top: 0
+          background-color: $colorBlue
+          height: 100%
+          width: 100%
+  img 
+    position: relative
+    width: 30vw
+    z-index: -2
+  &#web-designer
+    .img
+      display: flex
+      justify-content: flex-end
+    .content
+      box-shadow: 10px 10px 0 $colorYellow
+      h2:before
+        background-color: $colorYellow
+
+
+@media(max-width: 992px)
+  .team 
+    .img 
+      display: none !important
+    .left, .right 
+      margin-top: 0 !important
+    .role-list 
+      padding-top: 50px !important
+
+
+
+@media(max-width: 786px)
+  h1 
+    font-size: 13vw
+  .jumbotron
+    height: 100vh
+    background-attachment: scroll
+    justify-content: center
+    align-items: center
+    h1, p 
+      text-align: center
+    h1 
+      font-size: 15vw
+      padding-bottom: 15px
+    p 
+      padding-bottom: 0
+      font-size: 3vw
+      width: 100%
+  #worldAnnualProduce, #whereUse
+    padding-top: 30px
+    .flex-container
+      flex-direction: column
+      .textArea
+        padding: 0
+      .img
+        padding: 30px 0
+        flex: auto
+  #whereUse
+    padding-bottom: 50px
+  #problems
+    .slideShow
+      padding: 60px 0 70px 0
+      li
+        .card
+          width: 80%
+          padding: 0
+          display: flex
+          flex-direction: column
+          align-items: center
+          .img
+            width: 80vw
+            height: 80vw
+            grid-area: img
+          .textArea
+            padding: 0
+            align-items: center
+            grid-area: text
+            text-align: center
+            h1 
+              font-size: 15vw
+            p 
+              font-size: 3.5vw
+            .button
+              width: 40vw
+              font-size: 5vw
+    [class$='Arrow']
+      display: none
+  [id^='Question']
+    padding: 30px 0
+    .title
+      width: 100%
+      font-size: 40px
+    form
+      justify-content: center
+  #Question4
+    form 
+      flex-direction: column
+      align-items: center
+      button
+        width: 80%
+        margin-bottom: 30px
+        font-size: 5vw
+  #fourRIntro
+    padding-top: 60px
+    .grid-container
+      padding: 0
+      grid-gap: 10px
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: auto 1fr 1fr
+      .textArea
+        padding: 0 10px
+        grid-row: auto
+        grid-column: 1 / 3
+        h2 
+          font-size: 2em
+      .fourRIcon
+        .explain
+          h2 
+            font-size: 5vw
+        img 
+          width: 80%
+          height: 100px
+  .fourR
+    padding-top: 150px
+    position: relative
+    .title
+      padding: 140px 0 20px 20px;
+      height: 230px
+      justify-content: flex-end
+      text-align: left !important
+      h1 
+        font-size: 15vw
+      p 
+        font-size: 4vw
+    .iconImg
+      height: 250px
+      position: absolute
+      right: -30px
+      top: 10px
+    .flex-container
+      flex-direction: column
+  #reduce
+    #card-wrap
+      display: flex
+      justify-content: center
+      .card
+        width: 100%
+        max-width: 300px
+      img 
+        position: relative
+        width: 100%
+        height: 100%
+        height: 150px
+        object-fit: cover
+      .foward-arrow
+        +size(100px)
+        position: absolute
+        right: 10px
+        bottom: -40px
+  #recycle
+    .vid-wrap
+      .left, .right
+        padding: 0
+        padding-bottom: 20px
+  .team 
+    .img 
+      display: block !important
+      img
+        width: 100%
+    .text-container 
+      flex-direction: column  
+      .content
+        padding: 0
+        padding-top: 150px
+        h2 
+          width: 80%
+          font-size: 25px
+        p 
+          padding: 30px
+      .name
+        margin-bottom: -130px
+        position: absolute
+        left: 0
+        top: 0px
+        padding-top: 80px
+        h1
+          font-size: 80px
+          text-align-last: left
+          letter-spacing: 10px
+      .role-list 
+        position: absolute
+        padding: 10px !important
+        z-index: 2
+        li
+          display: inline-block
+          padding: 0 !important
+          font-size: 110%
+  #pic-source
+    .flex-container 
+      flex-direction: column
+
